@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Make the website scale for responsiveness-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Title of the Website -->
+        <title>Pokemon Quiz | RamkrishnaDev</title>
+
+        <!-- Load CSS code -->
+        <link rel="stylesheet" href="dist/main.css">
+    </head>
+    <body>
+        <!-- Container -->
+        <div class="container">
+            <p id="title">Guess the name of the pokemon!</p>
+            <img id="image">
+            <input id="input-text" type="text" placeholder="Name of the pokemon">
+            <button id="submit-button">Submit</button>
+        </div>
+
+        <!-- Count -->
+        <div class="count-container">
+            <p class="guessed-right">Guessed Right: <span class="right">0</span></p>
+            <p class="guessed-wrong">Guessed Wrong: <span class="wrong">0</span></p>
+        </div>
+
+        <!-- Load JavaScript code -->
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='%23c3bf55' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+// Container Styles
+.container {
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.342);
+    
+    // Guess the name of the pokemon styles
+    #title {
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    // Pokemon image styles
+    #image {
+        height: auto;
+        width: 200px;
+    }
+
+    // User input box styles
+    #input-text {
+        padding: 0.5rem;
+        width: 10rem;
+    }
+
+    // Submit button styles
+    #submit-button {
+        background-color: rgb(236, 236, 101);
+        color: black;
+        border: none;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0.5rem 1.2rem;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    // Change color when button is hovered
+    #submit-button:hover {
+        background-color: rgb(148, 148, 63);
+    }
+}
+
+// Count Styles
+.count-container {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background: rgb(245, 245, 245);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    gap: 10px;
+    border: 3px solid black;
+
+    .guessed-right {
+        color: green;
+    }
+
+    .guessed-wrong {
+        color: red;
+    }
+}
